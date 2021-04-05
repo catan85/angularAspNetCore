@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+  <a (click)="goRandomHero()">Random</a>
+  <a routerLink="/timer-random">Timer Random</a>
+</nav>
+
+<!-- Selettore del component heroes -->
+<!--<app-heroes></app-heroes> -->
+<!-- sostituito poi dal router outlet (si mostra quello che dice il modulo di routing) -->
+<router-outlet></router-outlet>
+<!-- Selettore del component della messaggistica-->
+<app-messages></app-messages>
